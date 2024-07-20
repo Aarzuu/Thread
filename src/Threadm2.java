@@ -12,7 +12,7 @@ public class Threadm2 extends Thread{
     @Override
     public void run() {
         try {
-            FileWriter fw = new FileWriter("file.txt");
+            FileWriter fw = new FileWriter("file.txt",true);
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(message);
             bw.close();
